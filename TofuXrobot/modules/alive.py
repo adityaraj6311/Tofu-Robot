@@ -58,7 +58,7 @@ async def hmm(yes):
     Tofu += f"♡ **Pyrogram Version** ~♪ `{pyro}`\n\n"
     Tofu += f"♡ **My Master** ~♪ [{OWNER_NAME}](tg://user?id={OWNER_ID})\n\n"
     Tofu += f"Thanks For Adding Me In {yes.chat.title}"
-    BUTTON = [[Button.url("Support Chat", "https://t.me/TofusSupport"), Button.url("Updates Channel", "https://t.me/Pegasusupdates")]]
+    BUTTON = [[Button.url("Support Chat", "https://t.me/tofu_support"), Button.url("Updates Channel", "https://t.me/Pegasusupdates")]]
     on = await borg.send_file(yes.chat_id, file=file2,caption=Tofu, buttons=BUTTON)
 
     await asyncio.sleep(edit_time)
@@ -85,5 +85,5 @@ async def hmm(yes):
 @register(pattern=("/repo"))
 async def repo(event):
     Tofu = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
-    BUTTON = [[Button.url("[► Support ◄]", "https://t.me/TofusSupport"), Button.url("[► Repo ◄]", "https://github.com/Awesome-Tofu/Tofu-Robot")]]
+    BUTTON = [[Button.url("[► Support ◄]", "https://t.me/tofu_support"), Button.url("[► Repo ◄]", "https://github.com/Awesome-Tofu/Tofu-Robot")]]
     await borg.send_file(event.chat_id, file="https://telegra.ph/file/c5b6c0a3a6832efc08e5b.jpg", caption=Tofu, buttons=BUTTON)

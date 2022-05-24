@@ -62,7 +62,7 @@ def paginate_modules(page_n: int, module_dict: Dict, prefix, chat=None) -> List:
         pairs += [[
             (EqInlineKeyboardButton("Try inline", switch_inline_query_current_chat="",)),
                 EqInlineKeyboardButton("Back", callback_data="Tofu_back"),
-             EqInlineKeyboardButton("Support", url="t.me/Tofussupport")]]
+             EqInlineKeyboardButton("Support", url="t.me/tofu_support")]]
 
     return pairs
 

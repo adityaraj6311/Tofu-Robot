@@ -214,7 +214,7 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/TofusSupport"),
+                             url=f"https://t.me/tofu_support"),
                        InlineKeyboardButton(
                              text="🛰️ Updates",
                              url="https://t.me/TofuXUpdates")
@@ -275,7 +275,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Tofussupport")]]))
+                                       url="t.me/tofu_support")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -334,7 +334,7 @@ def Tofu_callback_data(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="🕊️ Updates", url="t.me/TofuXUpdates"),
-                    InlineKeyboardButton(text="🚑 Support", url="t.me/Tofussupport"),
+                    InlineKeyboardButton(text="🚑 Support", url="t.me/tofu_support"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="Tofu_back")
@@ -399,7 +399,7 @@ def get_help(update: Update, context: CallbackContext):
                 [[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Tofussupport")]]))
+                                       url="t.me/tofu_support")]]))
 
     else:
         send_help(chat.id, HELP_STRINGS)
@@ -548,7 +548,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 5291415314 and DONATION_LINK:
+        if OWNER_ID != 5015417782 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),

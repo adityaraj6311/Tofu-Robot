@@ -212,7 +212,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/TofusSupport",
+                    url=f"https://t.me/tofu_support",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -331,7 +331,7 @@ def spb(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/TofusSupport",
+                    url=f"https://t.me/tofu_support",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -476,7 +476,7 @@ def media_query(query: str, update: Update, context: CallbackContext) -> None:
                 [
                     InlineKeyboardButton(
                         text="Report error",
-                        url="https://t.me/TofusSupport",
+                        url="https://t.me/tofu_support",
                     ),
                     InlineKeyboardButton(
                         text="Search again",

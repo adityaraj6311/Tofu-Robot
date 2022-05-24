@@ -46,7 +46,7 @@ This repo was just reamped to suit an Anime-centric community. All original cred
 
 ### ╒═══「 Support Group 」 
 
-The Support group can be reached out to at [Tofu • Support](https://t.me/TofusSupport), where you can ask for help about [Tofu](https://t.me/TofuXrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Tofu • Support](https://t.me/tofu_support), where you can ask for help about [Tofu](https://t.me/TofuXrobot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 <details>
 	<summary>Heroku Deploy</summary>
