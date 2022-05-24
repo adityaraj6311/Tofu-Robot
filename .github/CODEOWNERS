@@ -2,8 +2,8 @@
 # Default owners for everything in the repo, unless a later match takes precedence
 
 # Tofu owns the files under blacklist thingies
-/TofuXrobot/modules/blacklistusers.py @H0daka
-/TofuXrobot/modules/sql/blacklistusers_sql.py @H0daka
+/TofuXrobot/modules/blacklistusers.py @Awesome_tofu
+/TofuXrobot/modules/sql/blacklistusers_sql.py @Awesome_tofu
 #pep8-ing the code doesn't change maker
-/TofuXrobot/modules/paste.py @H0daka
-/TofuXrobot/modules/speed_test.py @H0daka
+/TofuXrobot/modules/paste.py @Awesome_tofu
+/TofuXrobot/modules/speed_test.py @Awesome_tofu
