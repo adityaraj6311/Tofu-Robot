@@ -18,7 +18,7 @@ from telegram.utils.helpers import mention_html
 
 from TofuXrobot import dispatcher
 from TofuXrobot.modules.disable import DisableAbleCommandHandler
-from TofuXrobot.events import register as Miku
+from TofuXrobot.events import register as Tofu
 from TofuXrobot import telethn as bot
 
 combot_stickers_url = "https://combot.org/telegram/stickers?q="
@@ -577,7 +577,7 @@ def delsticker(update, context):
 Credit = "This Plugin Made by Kittu (@A_viyu), if you're using this code in your bot. there is no issue but don't remove this line" 
 
 
-@Miku(pattern="^/mmf ?(.*)")
+@Tofu(pattern="^/mmf ?(.*)")
 async def handler(event):
     if event.fwd_from:
         return

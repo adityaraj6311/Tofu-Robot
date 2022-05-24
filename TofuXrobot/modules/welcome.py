@@ -67,9 +67,9 @@ ENUM_FUNC_MAP = {
 
 VERIFIED_USER_WAITLIST = {}
 
-MIKU_IMG = "https://telegra.ph/file/be3430b7151fd64706679.mp4"
-MIKU = "https://telegra.ph/file/25442c7b0b61372df7ce9.jpg"
-MIKU_VID = "https://telegra.ph/file/e997d98975496adc09fe7.mp4"
+Tofu_IMG = "https://telegra.ph/file/be3430b7151fd64706679.mp4"
+Tofu = "https://telegra.ph/file/25442c7b0b61372df7ce9.jpg"
+Tofu_VID = "https://telegra.ph/file/e997d98975496adc09fe7.mp4"
 WAIFUS_IMG = "https://telegra.ph/file/a6c91884e06744ad48fb7.jpg"
 
 
@@ -196,7 +196,7 @@ def new_member(update: Update, context: CallbackContext):
             # Give the owner a special welcome
             if new_mem.id == OWNER_ID:
                 update.effective_message.reply_video(
-                MIKU_IMG, caption= "Oh, Genos? Let's get this moving.",
+                Tofu_IMG, caption= "Oh, Genos? Let's get this moving.",
                     reply_to_message_id=reply)
                 welcome_log = (f"{html.escape(chat.title)}\n"
                                f"#USER_JOINED\n"
@@ -214,7 +214,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Sudos
             elif new_mem.id in DRAGONS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Huh! A Rank Hunter just joined! Stay Alert!",
+                Tofu, caption= "Huh! A Rank Hunter just joined! Stay Alert!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -222,7 +222,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Support
             elif new_mem.id in DEMONS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Huh! Someone with a B Rank Hunter level just joined!",
+                Tofu, caption= "Huh! Someone with a B Rank Hunter level just joined!",
                     reply_to_message_id=reply,
                 )
                 continue
@@ -230,14 +230,14 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome Whitelisted
             elif new_mem.id in TIGERS:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Oof! A C Rank Hunter just joined!",
+                Tofu, caption= "Oof! A C Rank Hunter just joined!",
                     reply_to_message_id=reply)
                 continue
 
             # Welcome Tigers
             elif new_mem.id in WOLVES:
                 update.effective_message.reply_photo(
-                MIKU, caption= "Oof! A D Rank Hunter just joined!",
+                Tofu, caption= "Oof! A D Rank Hunter just joined!",
                     reply_to_message_id=reply)
                 continue
 
@@ -257,10 +257,10 @@ def new_member(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="Support🚑",
-                             url=f"https://t.me/MikuXSupport"),
+                             url=f"https://t.me/TofuXSupport"),
                        InlineKeyboardButton(
                              text="Updates🛰️",
-                             url="https://t.me/MikuXUpdates")
+                             url="https://t.me/TofuXUpdates")
                      ],
                      [                  
                        InlineKeyboardButton(
@@ -513,7 +513,7 @@ def left_member(update: Update, context: CallbackContext):
             # Give the owner a special goodbye
             if left_mem.id == OWNER_ID:
                 update.effective_message.reply_video(
-                MIKU_VID, caption= "Oi! Genos! He left..", reply_to_message_id=reply)
+                Tofu_VID, caption= "Oi! Genos! He left..", reply_to_message_id=reply)
                 return
 
             # Give the devs a special goodbye
@@ -1035,7 +1035,7 @@ def __chat_settings__(chat_id, user_id):
 HELPABLE = {}
 
 HELP_STRINGS = """
-Hey [{}](tg://user?id={}) your *Miku* is here! 
+Hey [{}](tg://user?id={}) your *Tofu* is here! 
 I Help Admins To Manage Their Groups! 
 Main commands available :
  ‣ /help: PM's you this message.
@@ -1075,7 +1075,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikuxsupport")]]))
+                                       url="t.me/Tofuxsupport")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))

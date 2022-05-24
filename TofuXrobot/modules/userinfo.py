@@ -48,7 +48,7 @@ from TofuXrobot.modules.helper_funcs.chat_status import sudo_plus
 from TofuXrobot.modules.helper_funcs.extraction import extract_user
 from TofuXrobot import telethn
 
-MIKU_IMG = "https://telegra.ph/file/e3be4035a03c7ecb6b24e.jpg"
+Tofu_IMG = "https://telegra.ph/file/e3be4035a03c7ecb6b24e.jpg"
 
 def no_by_per(totalhp, percentage):
     """
@@ -464,11 +464,11 @@ def stats(update, context):
     status += "*➢ Uptime:* " + str(botuptime) + "\n"
     try:
         update.effective_message.reply_photo(
-            MIKU_IMG,
+            Tofu_IMG,
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/MikuXUpdates)\n\n"
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT}) | [✦ Updates](https://t.me/TofuXUpdates)\n\n"
             + "\n╘══「 by [卄σ∂αкα](https://t.me/h0daka) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -489,7 +489,7 @@ def stats(update, context):
                         "\n*Bot statistics*:\n"
                         + "\n".join(mod.__stats__() for mod in STATS)
                     )
-                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/MikuXUpdates)\n\n"
+                    + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/TofuXUpdates)\n\n"
                 )
                 + "╘══「 by [卄σ∂αкα](https://t.me/h0daka) 」\n"
             ),

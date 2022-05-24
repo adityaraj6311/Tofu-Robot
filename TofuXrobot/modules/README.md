@@ -1,13 +1,13 @@
-# Miku Example plugin format
+# Tofu Example plugin format
 
 ## Advanced: Decorators
 ```python3
 
-from TofuXrobot.modules.helper_funcs.decorators import mikucmd
+from TofuXrobot.modules.helper_funcs.decorators import Tofucmd
 from telegram import Update
 from telegram.ext import CallbackContext
 
-@mikucmd(command='hi', pass_args=True)
+@Tofucmd(command='hi', pass_args=True)
 def hello(update: Update, context: CallbackContext):
     message = update.effective_message
     message.reply_text("hello")
