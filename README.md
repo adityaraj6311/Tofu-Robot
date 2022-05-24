@@ -33,7 +33,7 @@
 
 ### ╒═══「 Creator Info/Credits 」
 
-+  [Hodaka](https://GitHub.com/Awesome_tofu) : OWNER | DEV
++  [Awesome-Tofu](https://GitHub.com/Awesome_tofu) : OWNER | DEV
 +  [Rajkumar](https://github.com/Awesome-RJ) : BASE
 +  [Hirojazz](https://github.com/Hirojazz) : BASE
 +  [Dank-del](https://github.com/Dank-del) : BASE 
